@@ -68,3 +68,12 @@ Update title and description:
 ```shell
 curl --header "Content-Type: application/json" --request PUT --data '{"id":4,"name":"New coffee","description":"Great croissants","type":"CAFE","campus":"ALTSTADT","street":"Hauptstraße","houseNumber":"95","postalCode":69117,"city":"Heidelberg"}' http://localhost:8080/api/pos/4 # set correct POS id here and in the body
 ```
+#### Create Bakery Kohlmann:
+```
+curl --header "Content-Type: application/json" --request POST --data '{"name":"Bäckerei Kohlmann GmbH","description":"Bad reviews","type":"BAKERY","campus":"INF","street":"Im Neuenheimer Feld","houseNumber":"370","postalCode":69120,"city":"Heidelberg"}' http://localhost:8080/api/pos
+```
+### Get Bakery Kohlmann:
+```
+curl http://localhost:8080/api/pos/5
+
+```
